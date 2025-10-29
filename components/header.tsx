@@ -37,15 +37,15 @@ export default function Header() {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
-	const features = [
+	const services = [
 		{
-			title: "Dashboard",
-			description: "Overview of your activity",
+			title: "Géolocalisation",
+			description: "Suivi en temps réel",
 			href: "#",
 		},
 		{
-			title: "Analytics",
-			description: "Track your performance",
+			title: "Vidéo surveillance",
+			description: "Surveillance accrue",
 			href: "#",
 		},
 	];
@@ -56,11 +56,11 @@ export default function Header() {
 		>
 			<div className="max-w-6xl px-6 mx-auto">
 				<nav className="flex items-center justify-between">
-					<Link href="https://www.shadcnblocks.com" className="flex items-center gap-2 text-2xl">
+					<Link href="https://www.shadcnblocks.com" className="flex items-center gap-2 md:text-2xl">
 						<Image
 							src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
 							className="max-h-8"
-							alt="Shadcn UI Navbar"
+							alt="Logo"
 							width={50}
 							height={50}
 						/>
@@ -69,21 +69,26 @@ export default function Header() {
 					<NavigationMenu className="hidden lg:block ml-auto">
 						<NavigationMenuList>
 							<NavigationMenuItem>
-								<NavigationMenuTrigger className="bg-transparent">Features</NavigationMenuTrigger>
+								<NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
+									Accueil
+								</NavigationMenuLink>
+							</NavigationMenuItem>
+							<NavigationMenuItem>
+								<NavigationMenuTrigger className="bg-transparent">Services</NavigationMenuTrigger>
 								<NavigationMenuContent>
 									<div className="flex w-62 flex-col p-3">
-										{features.map((feature, index) => (
+										{services.map((service, index) => (
 											<NavigationMenuLink
-												href={feature.href}
+												href={service.href}
 												key={index}
 												className="hover:bg-muted/70 rounded-md p-3 transition-colors"
 											>
-												<div key={feature.title}>
+												<div key={service.title}>
 													<p className="text-foreground mb-1 font-semibold">
-														{feature.title}
+														{service.title}
 													</p>
 													<p className="text-muted-foreground text-sm">
-														{feature.description}
+														{service.description}
 													</p>
 												</div>
 											</NavigationMenuLink>
@@ -93,12 +98,7 @@ export default function Header() {
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
-									Products
-								</NavigationMenuLink>
-							</NavigationMenuItem>
-							<NavigationMenuItem>
-								<NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
-									Resources
+									Tarifs
 								</NavigationMenuLink>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
@@ -123,33 +123,36 @@ export default function Header() {
 										<Image
 											src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
 											className="max-h-8"
-											alt="Shadcn UI Navbar"
+											alt="Logo"
 											width={500}
 											height={100}
 										/>
 									</Link>
 								</SheetTitle>
 							</SheetHeader>
-							<div className="flex flex-col p-4">
-								<Accordion type="single" collapsible className="mb-2 mt-4">
+							<div className="flex flex-col p-4 gap-4">
+								<Link href="#" className="font-medium">
+									Accueil
+								</Link>
+								<Accordion type="single" collapsible>
 									<AccordionItem value="solutions" className="border-none">
-										<AccordionTrigger className="text-base hover:no-underline">
-											Features
+										<AccordionTrigger className="text-base hover:no-underline py-0">
+											Services
 										</AccordionTrigger>
 										<AccordionContent>
 											<div className="grid md:grid-cols-2">
-												{features.map((feature, index) => (
+												{services.map((service, index) => (
 													<Link
-														href={feature.href}
+														href={service.href}
 														key={index}
 														className="hover:bg-muted/70 rounded-md p-3 transition-colors"
 													>
-														<div key={feature.title}>
+														<div key={service.title}>
 															<p className="text-foreground mb-1 font-semibold">
-																{feature.title}
+																{service.title}
 															</p>
 															<p className="text-muted-foreground text-sm">
-																{feature.description}
+																{service.description}
 															</p>
 														</div>
 													</Link>
@@ -158,17 +161,12 @@ export default function Header() {
 										</AccordionContent>
 									</AccordionItem>
 								</Accordion>
-								<div className="flex flex-col gap-6">
-									<Link href="#" className="font-medium">
-										Templates
-									</Link>
-									<Link href="#" className="font-medium">
-										Blog
-									</Link>
-									<Link href="#" className="font-medium">
-										Pricing
-									</Link>
-								</div>
+								<Link href="#" className="font-medium">
+									Tarifs
+								</Link>
+								<Link href="#" className="font-medium">
+									Contact
+								</Link>
 							</div>
 						</SheetContent>
 					</Sheet>
