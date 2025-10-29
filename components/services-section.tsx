@@ -96,7 +96,12 @@ export default function ServicesSection() {
 												className="fill-white"
 											/>
 
-											<circle className="fill-green-500 animate-pulse" cx="47.21" cy="15.7" r="2" />
+											<circle
+												className="fill-green-500 animate-pulse"
+												cx="47.21"
+												cy="15.7"
+												r="2"
+											/>
 
 											<path
 												d="M41.67,43.36c-0.55,0-1-0.45-1-1v-6.7h-4v7.7c0,2.21,1.79,4,4,4h11.28v-4H41.67z"
@@ -172,14 +177,8 @@ export default function ServicesSection() {
 												y2="230.114"
 												gradientUnits="userSpaceOnUse"
 											>
-												<stop
-													stopColor="#00c950"
-												/>
-												<stop
-													offset="1"
-													stopColor="#00c950"
-													stopOpacity="0.01"
-												/>
+												<stop stopColor="#00c950" />
+												<stop offset="1" stopColor="#00c950" stopOpacity="0.01" />
 											</linearGradient>
 										</defs>
 									</svg>
