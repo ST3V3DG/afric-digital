@@ -7,7 +7,7 @@ const World = dynamic(() => import("./ui/globe").then((m) => m.World), { ssr: fa
 export default function WorldClient() {
 	const globeConfig = {
 		pointSize: 0,
-		globeColor: "#ffffff",
+		globeColor: "#52a9ff",
 		showAtmosphere: true,
 		atmosphereColor: "#000000",
 		atmosphereAltitude: 0.1,
@@ -27,7 +27,7 @@ export default function WorldClient() {
 		autoRotate: true,
 		autoRotateSpeed: 0.5,
 	};
-	const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+	const colors = ["#3b82f6", "#3b82f6", "#3b82f6"];
 	const sampleArcs = [
 		{
 			order: 1,
