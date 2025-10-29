@@ -105,7 +105,7 @@ export default function HeroSection() {
 						biens.
 					</p>
 				</div>
-				<Button asChild size="lg" className="mt-10 rounded-sm">
+				<Button asChild size="lg" className="mt-10 rounded-sm bg-primary">
 					<Link href="#contact">Surveiller dès maintenant</Link>
 				</Button>
 				<div className="mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row">

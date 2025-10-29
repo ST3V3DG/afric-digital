@@ -103,7 +103,7 @@ export default function Header() {
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<Button asChild variant={"outline"}>
-									<Link href="/contact" className={`rounded-sm ${scrolled && "bg-black text-white"}`}>
+									<Link href="/contact" className={`rounded-sm ${scrolled && "bg-primary text-white"}`}>
 										Contact
 									</Link>
 								</Button>
