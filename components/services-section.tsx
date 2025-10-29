@@ -129,7 +129,7 @@ export default function ServicesSection() {
 							<CardContent className="grid pt-6 sm:grid-cols-2">
 								<div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
 									<div className="relative flex items-center aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
-										<TrendingUp className="size-5 mx-auto" />
+										<TrendingUp className="size-5 mx-auto text-green-500" />
 									</div>
 									<div className="space-y-2">
 										<h3 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">
@@ -190,7 +190,7 @@ export default function ServicesSection() {
 							<CardContent className="grid h-full pt-6 sm:grid-cols-2">
 								<div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
 									<div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
-										<Shield className="m-auto size-5" strokeWidth={1} />
+										<Shield className="m-auto size-5 text-green-500" strokeWidth={1} />
 									</div>
 									<div className="space-y-2">
 										<h3 className="text-lg font-medium transition">Intervention rapide</h3>
