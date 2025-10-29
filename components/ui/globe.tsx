@@ -207,7 +207,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 			const newNumbersOfRings = genRandomNumbers(0, data.length, Math.floor((data.length * 4) / 5));
 
 			const ringsData = data
-				.filter((d, i) => newNumbersOfRings.includes(i))
+				.filter((_d, i) => newNumbersOfRings.includes(i))
 				.map((d) => ({
 					lat: d.startLat,
 					lng: d.startLng,
@@ -265,9 +265,7 @@ export function World(props: WorldProps) {
 
 export function hexToRgb(hex: string) {
 	var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-	hex = hex.replace(shorthandRegex, function (m, r, g, b) {
-		return r + r + g + g + b + b;
-	});
+	hex = hex.replace(shorthandRegex, (_m, r, g, b) => r + r + g + g + b + b);
 
 	var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
 	return result
