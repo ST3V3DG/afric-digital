@@ -14,19 +14,22 @@ export default function Eye() {
 		tl.to(pupilRef.current, {
 			x: 8,
 			y: 8,
+			delay: 1,
 			duration: 1.5,
 		})
 			.to(pupilRef.current, {
 				x: -8,
 				y: 8,
+				delay: 1,
 				duration: 1,
 			})
 			.to(pupilRef.current, {
 				x: 0,
 				y: 0,
-				delay: 0.5,
+				delay: 1,
 				duration: 1.5,
-			});
+			})
+			.repeat(-1);
 	});
 
 	return (

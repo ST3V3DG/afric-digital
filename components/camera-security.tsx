@@ -14,7 +14,8 @@ export default function CameraSecurity() {
 		tl.to(cameraHeadRef.current, {
 			rotate: 45,
 			// repeat: -1,
-			duration: 1,
+			duration: 2,
+			delay: 1,
 			transformOrigin: "65% 80%",
 		})
 			.to(cameraHeadRef.current, {
@@ -30,7 +31,8 @@ export default function CameraSecurity() {
 				duration: 1,
 				delay: 1,
 				transformOrigin: "65% 80%",
-			});
+			})
+			.repeat(-1);
 	});
 
 	return (
