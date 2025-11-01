@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("./ui/globe").then((m) => m.World), { ssr: false });
 
-export default function WorldClient() {
+export default function WorldClient({ className }: { className: string | undefined }) {
 	const globeConfig = {
 		pointSize: 0,
 		globeColor: "#52a9ff",
@@ -31,8 +31,8 @@ export default function WorldClient() {
 	const sampleArcs = [
 		{
 			order: 1,
-			startLat: -19.885592,
-			startLng: -43.951191,
+			startLat: -19.885_592,
+			startLng: -43.951_191,
 			endLat: -22.9068,
 			endLng: -43.1729,
 			arcAlt: 0.1,
@@ -49,10 +49,10 @@ export default function WorldClient() {
 		},
 		{
 			order: 1,
-			startLat: -19.885592,
-			startLng: -43.951191,
-			endLat: -1.303396,
-			endLng: 36.852443,
+			startLat: -19.885_592,
+			startLng: -43.951_191,
+			endLat: -1.303_396,
+			endLng: 36.852_443,
 			arcAlt: 0.5,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
@@ -76,10 +76,10 @@ export default function WorldClient() {
 		},
 		{
 			order: 2,
-			startLat: -15.785493,
-			startLng: -47.909029,
-			endLat: 36.162809,
-			endLng: -115.119411,
+			startLat: -15.785_493,
+			startLng: -47.909_029,
+			endLat: 36.162_809,
+			endLng: -115.119_411,
 			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
@@ -112,10 +112,10 @@ export default function WorldClient() {
 		},
 		{
 			order: 4,
-			startLat: 11.986597,
-			startLng: 8.571831,
-			endLat: -15.595412,
-			endLng: -56.05918,
+			startLat: 11.986_597,
+			startLng: 8.571_831,
+			endLat: -15.595_412,
+			endLng: -56.059_18,
 			arcAlt: 0.5,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
@@ -166,10 +166,10 @@ export default function WorldClient() {
 		},
 		{
 			order: 6,
-			startLat: -15.432563,
-			startLng: 28.315853,
-			endLat: 1.094136,
-			endLng: -63.34546,
+			startLat: -15.432_563,
+			startLng: 28.315_853,
+			endLat: 1.094_136,
+			endLng: -63.345_46,
 			arcAlt: 0.7,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
@@ -193,10 +193,10 @@ export default function WorldClient() {
 		},
 		{
 			order: 7,
-			startLat: -19.885592,
-			startLng: -43.951191,
-			endLat: -15.595412,
-			endLng: -56.05918,
+			startLat: -19.885_592,
+			startLng: -43.951_191,
+			endLat: -15.595_412,
+			endLng: -56.059_18,
 			arcAlt: 0.1,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
@@ -220,10 +220,10 @@ export default function WorldClient() {
 		},
 		{
 			order: 8,
-			startLat: -8.833221,
-			startLng: 13.264837,
-			endLat: -33.936138,
-			endLng: 18.436529,
+			startLat: -8.833_221,
+			startLng: 13.264_837,
+			endLat: -33.936_138,
+			endLng: 18.436_529,
 			arcAlt: 0.2,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
@@ -364,8 +364,8 @@ export default function WorldClient() {
 		},
 		{
 			order: 13,
-			startLat: 11.986597,
-			startLng: 8.571831,
+			startLat: 11.986_597,
+			startLng: 8.571_831,
 			endLat: 35.6762,
 			endLng: 139.6503,
 			arcAlt: 0.3,
@@ -382,14 +382,14 @@ export default function WorldClient() {
 		},
 		{
 			order: 14,
-			startLat: -33.936138,
-			startLng: 18.436529,
-			endLat: 21.395643,
-			endLng: 39.883798,
+			startLat: -33.936_138,
+			startLng: 18.436_529,
+			endLat: 21.395_643,
+			endLng: 39.883_798,
 			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 	];
 
-	return <World globeConfig={globeConfig} data={sampleArcs} />;
+	return <World className={className} data={sampleArcs} globeConfig={globeConfig} />;
 }

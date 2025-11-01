@@ -7,7 +7,9 @@ import type { Variants } from "framer-motion";
 import WorldClient from "./world-client";
 import CameraSecurity from "./camera-security";
 import Eye from "./eye";
+import Image from "next/image";
 
+const maxRating = 5;
 const reviews = {
 	count: 200,
 	rating: 5.0,
@@ -57,9 +59,9 @@ export default function HeroSection() {
 	} satisfies { item: Variants };
 
 	return (
-		<section className="pt-20 md:pt-28 relative transition">
+		<section className="relative pt-28 transition">
 			<div
-				className="absolute inset-0 -z-10"
+				className="-z-10 absolute inset-0"
 				style={{
 					backgroundImage: `
               linear-gradient(to right, #e2e8f0 1px, transparent 1px),
@@ -71,18 +73,18 @@ export default function HeroSection() {
 				}}
 			/>
 
-			<div className="max-w-6xl px-6 text-center flex flex-col items-center mx-auto">
+			<div className="mx-auto flex max-w-6xl flex-col items-center px-6 text-center">
 				<div className="mx-auto flex max-w-4xl flex-col gap-0 md:gap-6">
 					<AnimatedGroup variants={transitionVariants}>
 						<Link
+							className="group mx-auto flex w-fit items-center gap-4 rounded-full border bg-white/70 p-0.5 pl-4 shadow-md shadow-zinc-950/5 backdrop-blur-3xl transition-colors duration-300 hover:bg-background dark:border-t-white/5 dark:shadow-zinc-950 dark:hover:border-t-border"
 							href="#contact"
-							className="hover:bg-background backdrop-blur-3xl dark:hover:border-t-border bg-white/70 group mx-auto flex w-fit items-center gap-4 rounded-full border p-0.5 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
 						>
 							<span className="text-foreground text-sm">Géolocatisation et vidéo surveillance</span>
-							<span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+							<span className="block h-4 w-0.5 border-l bg-white dark:border-background dark:bg-zinc-700" />
 
-							<div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-								<div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+							<div className="size-6 overflow-hidden rounded-full bg-background duration-500 group-hover:bg-muted">
+								<div className="-translate-x-1/2 flex w-12 duration-500 ease-in-out group-hover:translate-x-0">
 									<span className="flex size-6">
 										<ArrowRight className="m-auto size-3" />
 									</span>
@@ -93,43 +95,52 @@ export default function HeroSection() {
 							</div>
 						</Link>
 					</AnimatedGroup>
-					<h1 className="text-4xl font-semibold lg:text-7xl">
+					<h1 className="font-semibold text-4xl lg:text-7xl">
 						Garder un <Eye /> sur tout ce qui vous est{" "}
-						<span className="relative before:absolute before:left-0 before:bottom-2 md:before:bottom-2.5 lg:before:bottom-5 px-2 before:h-2 lg:before:h-3 before:bg-sky-600 before:transition before:-z-10 bg-underline">
+						<span className="before:-z-10 relative bg-underline px-2 before:absolute before:bottom-2 before:left-0 before:h-2 before:bg-sky-600 before:transition md:before:bottom-2.5 lg:before:bottom-5 lg:before:h-3">
 							chère
 						</span>
 						<CameraSecurity />
 					</h1>
-					<p className="text-muted-foreground text-balance lg:text-lg max-w-3xl mx-auto">
+					<p className="mx-auto max-w-3xl text-balance text-muted-foreground lg:text-lg">
 						Soyez serein et à l'affut en surveillant en temps réel tous les mouvements autour de tous vos
 						biens.
 					</p>
 				</div>
-				<Button asChild size="lg" className="mt-10 rounded-sm bg-primary">
+				<Button asChild className="mt-10 rounded-sm bg-primary" size="lg">
 					<Link href="#contact">Surveiller dès maintenant</Link>
 				</Button>
 				<div className="mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row">
-					<span className="mx-4 inline-flex items-center -space-x-4">
+					<span className="-space-x-4 mx-4 inline-flex items-center">
 						{reviews.avatars.map((avatar, index) => (
-							<Avatar key={index} className="size-14 border">
-								<AvatarImage src={avatar.src} alt={avatar.alt} />
+							<Avatar className="size-14 border" key={index}>
+								<AvatarImage alt={avatar.alt} src={avatar.src} />
 							</Avatar>
 						))}
 					</span>
 					<div>
-						<div className="flex items-center gap-1">
-							{[...Array(5)].map((_, index) => (
-								<Star key={index} className="size-5 fill-yellow-400 text-yellow-400" />
-							))}
-							<span className="mr-1 font-semibold">{reviews.rating?.toFixed(1)}</span>
+						<div className="flex items-center justify-center gap-2 md:justify-start">
+							<div className="flex items-center gap-1">
+								{[...new Array(maxRating)].map((_, index) => (
+									<Star className="size-5 fill-yellow-400 text-yellow-400" key={index} />
+								))}
+							</div>
+							<span className="font-semibold">{reviews.rating?.toFixed(1)}</span>
 						</div>
-						<p className="text-muted-foreground text-left font-medium text-sm">
+						<p className="text-left font-medium text-muted-foreground text-sm">
 							{reviews.count}+ nous font confiance
 						</p>
 					</div>
 				</div>
-				<div className="w-full h-110 lg:h-160 cursor-grab active:cursor-grabbing">
-					<WorldClient />
+				<div className="h-84 w-full md:h-110 md:cursor-grab md:active:cursor-grabbing lg:h-160">
+					<WorldClient className="hidden md:block" />
+					<Image
+						alt="World"
+						className="mx-auto w-2xl drop-shadow drop-shadow-blue-50 md:hidden"
+						height={500}
+						src="/world.png"
+						width={500}
+					/>
 				</div>
 			</div>
 		</section>

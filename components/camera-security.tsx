@@ -70,7 +70,7 @@ export default function CameraSecurity() {
 						d="M9.79,22.03c-1.9,0.58-2.42,3.02-0.93,4.32l8.03,7.02c0.66,0.57,1.57,0.77,2.4,0.52l34.91-10.64   c1.34-0.41,2.09-1.82,1.68-3.16l-2.64-8.66c-0.41-1.34-1.82-2.09-3.16-1.68L9.79,22.03z"
 					/>
 
-					<circle className="fill-red-400 animate-pulse" cx="47.21" cy="15.7" r="2" />
+					<circle className="animate-pulse fill-red-400" cx="47.21" cy="15.7" r="2" />
 				</g>
 
 				<path

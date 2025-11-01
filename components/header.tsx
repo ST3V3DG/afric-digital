@@ -44,7 +44,7 @@ export default function Header() {
 			href: "#",
 		},
 		{
-			title: "Vidéo surveillance",
+			title: "Vidéosurveillance",
 			description: "Surveillance accrue",
 			href: "#",
 		},
@@ -52,24 +52,24 @@ export default function Header() {
 
 	return (
 		<header
-			className={`py-2 w-full z-50 transition duration-500 fixed top-0 ${!scrolled ? "bg-transparent" : "shadow-sm bg-white -mb-28"}`}
+			className={`fixed top-0 z-50 w-full py-2 transition duration-500 ${scrolled ? "-mb-28 bg-white shadow-sm" : "bg-transparent"}`}
 		>
-			<div className="max-w-6xl px-6 mx-auto">
+			<div className="mx-auto max-w-6xl px-6">
 				<nav className="flex items-center justify-between">
-					<Link href="https://www.shadcnblocks.com" className="flex items-center gap-2 md:text-2xl">
+					<Link className="flex items-center gap-2 md:text-2xl" href="https://www.afric-digital.vercel.app">
 						<Image
-							src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
-							className="max-h-8"
 							alt="Logo"
-							width={50}
+							className="max-h-8"
 							height={50}
+							src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+							width={50}
 						/>
 						<span className="flex-1 font-bold">{process.env.NEXT_PUBLIC_APP_NAME ?? "AFRIC DIGITAL"}</span>
 					</Link>
-					<NavigationMenu className="hidden lg:block ml-auto">
+					<NavigationMenu className="ml-auto hidden lg:block">
 						<NavigationMenuList>
 							<NavigationMenuItem>
-								<NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
+								<NavigationMenuLink className={navigationMenuTriggerStyle()} href="/">
 									Accueil
 								</NavigationMenuLink>
 							</NavigationMenuItem>
@@ -79,12 +79,12 @@ export default function Header() {
 									<div className="flex w-62 flex-col p-3">
 										{services.map((service, index) => (
 											<NavigationMenuLink
+												className="rounded-md p-3 transition-colors hover:bg-muted/70"
 												href={service.href}
 												key={index}
-												className="hover:bg-muted/70 rounded-md p-3 transition-colors"
 											>
 												<div key={service.title}>
-													<p className="text-foreground mb-1 font-semibold">
+													<p className="mb-1 font-semibold text-foreground">
 														{service.title}
 													</p>
 													<p className="text-muted-foreground text-sm">
@@ -97,13 +97,16 @@ export default function Header() {
 								</NavigationMenuContent>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
-								<NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
+								<NavigationMenuLink className={navigationMenuTriggerStyle()} href="#">
 									Tarifs
 								</NavigationMenuLink>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<Button asChild variant={"outline"}>
-									<Link href="/contact" className={`rounded-sm ${scrolled && "bg-primary text-white"}`}>
+									<Link
+										className={`rounded-sm ${scrolled && "bg-primary text-white"}`}
+										href="/contact"
+									>
 										Contact
 									</Link>
 								</Button>
@@ -112,43 +115,43 @@ export default function Header() {
 					</NavigationMenu>
 					<Sheet>
 						<SheetTrigger asChild className="lg:hidden">
-							<Button variant="outline" size="icon" className="border-none cursor-pointer rounded-xs">
+							<Button className="cursor-pointer rounded-xs border-none" size="icon" variant="outline">
 								<MenuIcon className="size-4" />
 							</Button>
 						</SheetTrigger>
-						<SheetContent side="top" className="max-h-screen overflow-auto">
+						<SheetContent className="max-h-screen overflow-auto" side="right">
 							<SheetHeader>
 								<SheetTitle>
-									<Link href="https://www.shadcnblocks.com" className="flex items-center gap-2">
+									<Link className="flex items-center gap-2" href="/">
 										<Image
-											src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
-											className="max-h-8"
 											alt="Logo"
-											width={500}
+											className="max-h-8"
 											height={100}
+											src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
+											width={500}
 										/>
 									</Link>
 								</SheetTitle>
 							</SheetHeader>
-							<div className="flex flex-col p-4 gap-4">
-								<Link href="#" className="font-medium">
+							<div className="flex flex-col gap-4 p-4">
+								<Link className="font-medium" href="#">
 									Accueil
 								</Link>
-								<Accordion type="single" collapsible>
-									<AccordionItem value="solutions" className="border-none">
-										<AccordionTrigger className="text-base hover:no-underline py-0">
+								<Accordion collapsible type="single">
+									<AccordionItem className="border-none" value="solutions">
+										<AccordionTrigger className="py-0 text-base hover:no-underline">
 											Services
 										</AccordionTrigger>
 										<AccordionContent>
 											<div className="grid md:grid-cols-2">
 												{services.map((service, index) => (
 													<Link
+														className="rounded-md p-3 transition-colors hover:bg-muted/70"
 														href={service.href}
 														key={index}
-														className="hover:bg-muted/70 rounded-md p-3 transition-colors"
 													>
 														<div key={service.title}>
-															<p className="text-foreground mb-1 font-semibold">
+															<p className="mb-1 font-semibold text-foreground">
 																{service.title}
 															</p>
 															<p className="text-muted-foreground text-sm">
@@ -161,10 +164,10 @@ export default function Header() {
 										</AccordionContent>
 									</AccordionItem>
 								</Accordion>
-								<Link href="#" className="font-medium">
+								<Link className="font-medium" href="#">
 									Tarifs
 								</Link>
-								<Link href="#" className="font-medium">
+								<Link className="font-medium" href="#">
 									Contact
 								</Link>
 							</div>

@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
 	title: "Afric Digital",
-	description: "Service de géolocalisation et vidéo-surveillance.",
+	description: "Service de géolocalisation et vidéosurveillance camerounais.",
 };
 
 export default function RootLayout({
