@@ -136,7 +136,7 @@ export default function HeroSection() {
 					<WorldClient className="hidden md:block" />
 					<Image
 						alt="World"
-						className="mx-auto w-2xl drop-shadow drop-shadow-blue-50 md:hidden"
+						className="mx-auto w-2xl drop-shadow-blue-700 drop-shadow-xs md:hidden"
 						height={500}
 						src="/world.png"
 						width={500}

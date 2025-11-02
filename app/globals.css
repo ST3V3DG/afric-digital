@@ -120,7 +120,7 @@
 		@apply bg-background text-foreground;
 	}
 	.bg-underline::before {
-		animation: expande-width 0.8s ease-out forwards;
+		animation: expande-width 0.8s ease-out 2.5s forwards;
 	}
 	@keyframes expande-width {
 		from {
