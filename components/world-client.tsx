@@ -53,7 +53,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: -43.951_191,
 			endLat: -1.303_396,
 			endLng: 36.852_443,
-			arcAlt: 0.5,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{
@@ -116,7 +116,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: 8.571_831,
 			endLat: -15.595_412,
 			endLng: -56.059_18,
-			arcAlt: 0.5,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{
@@ -125,7 +125,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: -58.3816,
 			endLat: 22.3193,
 			endLng: 114.1694,
-			arcAlt: 0.7,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{
@@ -170,7 +170,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: 28.315_853,
 			endLat: 1.094_136,
 			endLng: -63.345_46,
-			arcAlt: 0.7,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{
@@ -242,7 +242,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: 103.8198,
 			endLat: 40.7128,
 			endLng: -74.006,
-			arcAlt: 0.5,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{
@@ -260,7 +260,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: 114.1694,
 			endLat: -22.9068,
 			endLng: -43.1729,
-			arcAlt: 0.7,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{
@@ -269,7 +269,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: 103.8198,
 			endLat: -34.6037,
 			endLng: -58.3816,
-			arcAlt: 0.5,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{
@@ -278,7 +278,7 @@ export default function WorldClient({ className }: { className: string | undefin
 			startLng: -43.1729,
 			endLat: 28.6139,
 			endLng: 77.209,
-			arcAlt: 0.7,
+			arcAlt: 0.3,
 			color: colors[Math.floor(Math.random() * (colors.length - 1))],
 		},
 		{

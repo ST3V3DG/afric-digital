@@ -84,7 +84,7 @@ export default function AboutSection({
 	companies = defaultCompanies,
 }: AboutProps = {}) {
 	return (
-		<section className="bg-gray-50 py-32">
+		<section className="bg-gray-50 py-24">
 			<div className="mx-auto max-w-6xl px-6">
 				<div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
 					<h2 className="font-semibold text-5xl">{title}</h2>

@@ -59,7 +59,7 @@ export default function HeroSection() {
 	} satisfies { item: Variants };
 
 	return (
-		<section className="relative pt-28 transition">
+		<section className="relative pt-28 pb-8 transition">
 			<div
 				className="-z-10 absolute inset-0"
 				style={{

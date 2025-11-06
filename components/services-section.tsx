@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function ServicesSection() {
 	return (
-		<section className="py-8 dark:bg-transparent">
+		<section className="py-4 pb-24 dark:bg-transparent">
 			<div className="mx-auto max-w-6xl px-6">
 				<div className="relative">
 					<h2 className="pt-16 pb-4 text-center font-semibold text-4xl">Services</h2>
