@@ -4,30 +4,29 @@ import Link from "next/link";
 
 const defaultSections = [
 	{
-		title: "Product",
+		title: "Produit",
 		links: [
-			{ name: "Overview", href: "#" },
-			{ name: "Pricing", href: "#" },
-			{ name: "Marketplace", href: "#" },
-			{ name: "Features", href: "#" },
+			{ name: "Accueil", href: "#" },
+			{ name: "Tarifs", href: "#" },
+			{ name: "Projets", href: "#" },
+			{ name: "service", href: "#" },
 		],
 	},
 	{
-		title: "Company",
+		title: "Entriprise",
 		links: [
-			{ name: "About", href: "#" },
-			{ name: "Team", href: "#" },
+			{ name: "À propos", href: "#" },
+			{ name: "Équipe", href: "#" },
 			{ name: "Blog", href: "#" },
-			{ name: "Careers", href: "#" },
+			{ name: "Carières", href: "#" },
 		],
 	},
 	{
-		title: "Resources",
+		title: "Ressources",
 		links: [
-			{ name: "Help", href: "#" },
-			{ name: "Sales", href: "#" },
-			{ name: "Advertise", href: "#" },
-			{ name: "Privacy", href: "#" },
+			{ name: "Aide", href: "#" },
+			{ name: "Support", href: "#" },
+			{ name: "Confidentialité", href: "#" },
 		],
 	},
 ];
