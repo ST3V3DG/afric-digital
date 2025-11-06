@@ -77,10 +77,10 @@ export default function HeroSection() {
 				<div className="mx-auto flex max-w-4xl flex-col gap-0 md:gap-6">
 					<AnimatedGroup variants={transitionVariants}>
 						<Link
-							className="group mx-auto flex w-fit items-center gap-4 rounded-full border bg-white/70 p-0.5 pl-4 shadow-md shadow-zinc-950/5 backdrop-blur-3xl transition-colors duration-300 hover:bg-background dark:border-t-white/5 dark:shadow-zinc-950 dark:hover:border-t-border"
+							className="group mx-auto mb-2 flex w-fit items-center gap-4 rounded-full border bg-white/70 p-0.5 pl-4 shadow-md shadow-zinc-950/5 backdrop-blur-3xl transition-colors duration-300 hover:bg-background dark:border-t-white/5 dark:shadow-zinc-950 dark:hover:border-t-border"
 							href="#contact"
 						>
-							<span className="text-foreground text-sm">Géolocatisation et vidéo surveillance</span>
+							<span className="text-foreground text-sm">Géolocatisation et vidéosurveillance</span>
 							<span className="block h-4 w-0.5 border-l bg-white dark:border-background dark:bg-zinc-700" />
 
 							<div className="size-6 overflow-hidden rounded-full bg-background duration-500 group-hover:bg-muted">
@@ -98,7 +98,7 @@ export default function HeroSection() {
 					<h1 className="font-semibold text-4xl lg:text-7xl">
 						Garder un <Eye /> sur tout ce qui vous est{" "}
 						<span className="before:-z-10 relative bg-underline px-2 before:absolute before:bottom-2 before:left-0 before:h-2 before:bg-sky-600 before:transition md:before:bottom-2.5 lg:before:bottom-5 lg:before:h-3">
-							chère
+							cher
 						</span>
 						<CameraSecurity />
 					</h1>
@@ -107,7 +107,7 @@ export default function HeroSection() {
 						biens.
 					</p>
 				</div>
-				<Button asChild className="mt-10 rounded-sm bg-primary" size="lg">
+				<Button asChild className="mt-10 rounded bg-primary" size="lg">
 					<Link href="#contact">Surveiller dès maintenant</Link>
 				</Button>
 				<div className="mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row">

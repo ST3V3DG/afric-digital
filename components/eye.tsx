@@ -12,13 +12,13 @@ export default function Eye() {
 	useGSAP(() => {
 		const tl = gsap.timeline();
 		tl.to(pupilRef.current, {
-			x: 8,
+			x: -8,
 			y: 8,
 			delay: 1,
 			duration: 1.5,
 		})
 			.to(pupilRef.current, {
-				x: -8,
+				x: 8,
 				y: 8,
 				delay: 1,
 				duration: 1,

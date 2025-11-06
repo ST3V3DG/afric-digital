@@ -79,7 +79,7 @@ export default function Header() {
 									<div className="flex w-62 flex-col p-3">
 										{services.map((service, index) => (
 											<NavigationMenuLink
-												className="rounded-md p-3 transition-colors hover:bg-muted/70"
+												className="rounded p-3 transition-colors hover:bg-muted/70"
 												href={service.href}
 												key={index}
 											>
@@ -104,7 +104,7 @@ export default function Header() {
 							<NavigationMenuItem>
 								<Button asChild variant={"outline"}>
 									<Link
-										className={`rounded-sm ${scrolled && "bg-primary text-white"}`}
+										className={`rounded hover:bg-primary/90 hover:text-white ${scrolled && "bg-primary text-white"}`}
 										href="/contact"
 									>
 										Contact
@@ -115,7 +115,7 @@ export default function Header() {
 					</NavigationMenu>
 					<Sheet>
 						<SheetTrigger asChild className="lg:hidden">
-							<Button className="cursor-pointer rounded-xs border-none" size="icon" variant="outline">
+							<Button className="cursor-pointer rounded border-none" size="icon" variant="outline">
 								<MenuIcon className="size-4" />
 							</Button>
 						</SheetTrigger>
@@ -146,7 +146,7 @@ export default function Header() {
 											<div className="grid md:grid-cols-2">
 												{services.map((service, index) => (
 													<Link
-														className="rounded-md p-3 transition-colors hover:bg-muted/70"
+														className="rounded p-3 transition-colors hover:bg-muted/70"
 														href={service.href}
 														key={index}
 													>

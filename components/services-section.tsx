@@ -4,10 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function ServicesSection() {
 	return (
-		<section className="bg-gray-50 py-8 dark:bg-transparent">
+		<section className="py-8 dark:bg-transparent">
 			<div className="mx-auto max-w-6xl px-6">
 				<div className="relative">
-					<h2 className="pt-16 pb-4 text-center font-semibold text-4xl lg:text-7xl">Services</h2>
+					<h2 className="pt-16 pb-4 text-center font-semibold text-4xl">Services</h2>
 					<p className="pb-8 text-center text-foreground">
 						Nous avont beaucoup à vous offrir. Une multitude de services vous attend.
 					</p>
@@ -28,7 +28,7 @@ export default function ServicesSection() {
 									</svg>
 									<span className="mx-auto block w-fit font-semibold text-5xl">100%</span>
 								</div>
-								<h3 className="mt-6 text-center font-semibold text-3xl">Transparent</h3>
+								<h3 className="mt-6 text-center font-semibold text-3xl">Transparence</h3>
 							</CardContent>
 						</Card>
 						<Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
@@ -43,7 +43,7 @@ export default function ServicesSection() {
 									/>
 								</div>
 								<div className="relative z-10 mt-6 space-y-2 text-center">
-									<h3 className="font-medium text-lg transition group-hover:text-secondary-950 dark:text-white">
+									<h3 className="font-semibold text-lg transition group-hover:text-secondary-950 dark:text-white">
 										Suvi en temps réel
 									</h3>
 									<p className="text-foreground">
@@ -122,7 +122,7 @@ export default function ServicesSection() {
 									</svg>
 								</div>
 								<div className="relative z-10 mt-6 space-y-2 text-center">
-									<h3 className="font-medium text-lg transition">Sécurité</h3>
+									<h3 className="font-semibold text-lg transition">Sécurité</h3>
 									<p className="text-foreground">
 										Surprennez les malfaiteurs la main dans le sac grâce à des caméras de
 										surveillance haute définition.
@@ -137,7 +137,7 @@ export default function ServicesSection() {
 										<TrendingUp className="mx-auto size-5 text-blue-500" />
 									</div>
 									<div className="space-y-2">
-										<h3 className="font-medium text-lg text-zinc-800 transition group-hover:text-secondary-950 dark:text-white">
+										<h3 className="font-semibold text-lg text-zinc-800 transition group-hover:text-secondary-950 dark:text-white">
 											Suivi de votre consommation
 										</h3>
 										<p className="text-foreground">
@@ -192,7 +192,7 @@ export default function ServicesSection() {
 										<Shield className="m-auto size-5 text-blue-500" strokeWidth={1} />
 									</div>
 									<div className="space-y-2">
-										<h3 className="font-medium text-lg transition">Intervention rapide</h3>
+										<h3 className="font-semibold text-lg transition">Intervention rapide</h3>
 										<p className="text-foreground">
 											Une équipe d'intervention est rapidement déployée en cas de vol ou
 											d'agression.
