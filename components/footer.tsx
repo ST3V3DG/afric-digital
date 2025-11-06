@@ -51,7 +51,7 @@ const logo = {
 	title: process.env.NEXT_PUBLIC_APP_NAME ?? "AFRIC DIGITAL",
 };
 const sections = defaultSections;
-const description = "A collection of components for your startup business or side project.";
+const description = "Entreprise de sécurité digitale longue portée et haute précision.";
 const socialLinks = defaultSocialLinks;
 const legalLinks = defaultLegalLinks;
 

@@ -102,9 +102,8 @@ export default function HeroSection() {
 						</span>
 						<CameraSecurity />
 					</h1>
-					<p className="mx-auto max-w-3xl text-balance text-muted-foreground lg:text-lg">
-						Soyez serein et à l'affut en surveillant en temps réel tous les mouvements autour de tous vos
-						biens.
+					<p className="mx-auto max-w-2xl text-balance text-muted-foreground lg:text-lg">
+						 Un petit investissement pour protéger un plus grand. Soyez serein et à l'affut en surveillant en temps réel tous les mouvements autour de tous vos biens.
 					</p>
 				</div>
 				<Button asChild className="mt-10 rounded bg-primary" size="lg">
