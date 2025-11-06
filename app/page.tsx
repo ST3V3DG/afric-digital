@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about-section";
+import CTASection from "@/components/cta-section";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
@@ -14,6 +15,7 @@ export default function Home() {
 				<AboutSection />
 				<ServicesSection />
 				<StatsSection />
+				<CTASection />
 			</main>
 			<Footer />
 		</>
