@@ -6,15 +6,15 @@ const World = dynamic(() => import("./ui/globe").then((m) => m.World), { ssr: fa
 
 export default function WorldClient({ className }: { className: string | undefined }) {
 	const globeConfig = {
-		pointSize: 0,
+		pointSize: 4,
 		globeColor: "#52a9ff",
 		showAtmosphere: true,
 		atmosphereColor: "#52a9ff",
-		atmosphereAltitude: 0.2,
+		atmosphereAltitude: 0.3,
 		emissive: "#001f7f",
 		emissiveIntensity: 1,
 		shininess: 1,
-		polygonColor: "rgba(0, 0, 0, 0.9)",
+		polygonColor: "#ffffff",
 		ambientLight: "#ffffff",
 		directionalLeftLight: "#ffffff",
 		directionalTopLight: "#ffffff",
