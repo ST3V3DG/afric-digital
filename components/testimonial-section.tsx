@@ -25,11 +25,11 @@ export default function TestimonialSection() {
 							<MarqueeItem className="mr-8">
 								{testimonials.map((testimonial, index) => (
 									<blockquote
-										className="relative max-w-xl pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:rounded-xs before:bg-primary"
+										className="relative max-w-xl overflow-y-visible py-6 pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:rounded-xs before:bg-primary"
 										key={index}
 									>
 										<svg
-											className="-top-4 -z-10 absolute left-2 rotate-180 fill-gray-100"
+											className="-top-2 -z-10 absolute left-2 rotate-180 fill-gray-100"
 											height="80px"
 											viewBox="0 0 24 24"
 											xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function TestimonialSection() {
 											<span className="text-muted-foreground">{testimonial.profession}</span>
 										</div>
 										<svg
-											className="-z-10 absolute right-0 bottom-2 fill-gray-100"
+											className="-z-10 absolute right-0 bottom-8 fill-gray-100"
 											height="80px"
 											viewBox="0 0 24 24"
 											xmlns="http://www.w3.org/2000/svg"
