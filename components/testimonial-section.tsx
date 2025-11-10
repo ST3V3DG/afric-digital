@@ -13,7 +13,7 @@ export default function TestimonialSection() {
 	return (
 		<section>
 			<div className="py-24">
-				<div className="mx-auto flex w-full flex-col items-center gap-16 px-6">
+				<div className="mx-auto flex w-full flex-col items-center gap-8 px-6">
 					<div className="space-y-6 text-center">
 						<h2 className="font-semibold text-4xl">C'est toujours un plaisir de travailler avec vous</h2>
 						<p>Merci pour vos retours, merci pour la confiance.</p>
