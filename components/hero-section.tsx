@@ -110,7 +110,7 @@ export default function HeroSection() {
 				<Button asChild className="mt-10 rounded bg-primary" size="lg">
 					<Link href="#contact">Surveiller dès maintenant</Link>
 				</Button>
-				<div className="mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row">
+				<div className="mx-auto mt-6 flex w-fit flex-col items-center gap-4 sm:flex-row">
 					<span className="-space-x-4 mx-4 inline-flex items-center">
 						{reviews.avatars.map((avatar, index) => (
 							<Avatar className="size-14 border" key={index}>

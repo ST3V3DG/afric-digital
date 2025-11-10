@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export default function CTASection() {
 	return (
-		<section className="py-28">
+		<section className="bg-gray-50 py-28">
 			<div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 				<Card className="rounded-sm py-8 shadow-lg sm:py-16 lg:py-24">
 					<CardContent className="flex flex-wrap items-center justify-between gap-8 px-8 sm:flex-nowrap sm:px-16 lg:px-24">
@@ -14,7 +14,9 @@ export default function CTASection() {
 							</p>
 						</div>
 						<div className="flex items-center max-md:w-full md:justify-end">
-							<Button className="rounded-xs">Commencer à surveiller</Button>
+							<Button className="cursor-pointer rounded-xs hover:bg-primary/90">
+								Commencer à surveiller
+							</Button>
 						</div>
 					</CardContent>
 				</Card>
