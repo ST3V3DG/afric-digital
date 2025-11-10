@@ -13,7 +13,7 @@ export default function TestimonialSection() {
 	return (
 		<section>
 			<div className="py-24">
-				<div className="mx-auto flex w-full flex-col items-center gap-20 px-6">
+				<div className="mx-auto flex w-full flex-col items-center gap-16 px-6">
 					<div className="space-y-6 text-center">
 						<h2 className="font-semibold text-4xl">C'est toujours un plaisir de travailler avec vous</h2>
 						<p>Merci pour vos retours, merci pour la confiance.</p>
@@ -25,7 +25,7 @@ export default function TestimonialSection() {
 							<MarqueeItem className="mr-8">
 								{testimonials.map((testimonial, index) => (
 									<blockquote
-										className="relative max-w-xl overflow-y-visible py-6 pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:rounded-xs before:bg-primary"
+										className="relative max-w-xl py-6 pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:rounded-xs before:bg-primary"
 										key={index}
 									>
 										<svg
