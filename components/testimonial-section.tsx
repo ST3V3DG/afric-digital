@@ -24,7 +24,7 @@ export default function TestimonialSection() {
 						<MarqueeContent>
 							{testimonials.map((testimonial, index) => (
 								<MarqueeItem className="mr-8" key={index}>
-									<blockquote className="relative max-w-xl py-6 pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:rounded-xs before:bg-primary">
+									<blockquote className="relative max-w-xl py-6 pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:rounded-sm before:bg-primary">
 										<svg
 											className="-top-2 -z-10 absolute left-2 rotate-180 fill-gray-100"
 											height="80px"

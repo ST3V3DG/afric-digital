@@ -132,7 +132,7 @@ export default function HeroSection() {
 						</p>
 					</div>
 				</div>
-				<div className="h-84 w-full md:h-110 md:cursor-grab md:active:cursor-grabbing lg:h-160">
+				<div className="h-84 w-full md:h-110 md:cursor-grab md:active:cursor-grabbing lg:h-160 xl:h-200">
 					<WorldClient className="hidden md:block" />
 					<Image
 						alt="World"

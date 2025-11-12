@@ -12,7 +12,7 @@ export default function ServicesSection() {
 						Nous avont beaucoup à vous offrir. Une multitude de services vous attend.
 					</p>
 					<div className="relative z-10 grid grid-cols-6 gap-3">
-						<Card className="relative col-span-full flex overflow-hidden lg:col-span-2">
+						<Card className="relative col-span-full flex overflow-hidden rounded-sm lg:col-span-2">
 							<CardContent className="relative m-auto size-fit pt-6">
 								<div className="relative flex h-24 w-56 items-center">
 									<svg
@@ -31,7 +31,7 @@ export default function ServicesSection() {
 								<h3 className="mt-6 text-center font-semibold text-3xl">Transparence</h3>
 							</CardContent>
 						</Card>
-						<Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
+						<Card className="relative col-span-full overflow-hidden rounded-sm sm:col-span-3 lg:col-span-2">
 							<CardContent className="pt-6">
 								<div className="before:-inset-2 relative mx-auto flex aspect-square size-32 items-center rounded-full border before:absolute before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
 									<Image
@@ -44,7 +44,7 @@ export default function ServicesSection() {
 								</div>
 								<div className="relative z-10 mt-6 space-y-2 text-center">
 									<h3 className="font-semibold text-lg transition group-hover:text-secondary-950 dark:text-white">
-										Suvi en temps réel
+										Suivi en temps réel
 									</h3>
 									<p className="text-foreground">
 										Surveillez vos véhicules où qu'il soit de façon instantannée à l'aide de GPS
@@ -53,7 +53,7 @@ export default function ServicesSection() {
 								</div>
 							</CardContent>
 						</Card>
-						<Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
+						<Card className="relative col-span-full overflow-hidden rounded-sm sm:col-span-3 lg:col-span-2">
 							<CardContent className="pt-6">
 								<div className="before:-inset-2 relative mx-auto flex aspect-square size-32 items-center rounded-full border before:absolute before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
 									<svg
@@ -130,7 +130,7 @@ export default function ServicesSection() {
 								</div>
 							</CardContent>
 						</Card>
-						<Card className="card variant-outlined relative col-span-full overflow-hidden lg:col-span-3">
+						<Card className="card variant-outlined relative col-span-full overflow-hidden rounded-sm lg:col-span-3">
 							<CardContent className="grid pt-6 sm:grid-cols-2">
 								<div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
 									<div className="before:-inset-2 relative flex aspect-square size-12 items-center rounded-full border before:absolute before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
@@ -185,7 +185,7 @@ export default function ServicesSection() {
 								</div>
 							</CardContent>
 						</Card>
-						<Card className="card variant-outlined relative col-span-full overflow-hidden lg:col-span-3">
+						<Card className="card variant-outlined relative col-span-full overflow-hidden rounded-sm lg:col-span-3">
 							<CardContent className="grid h-full pt-6 sm:grid-cols-2">
 								<div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
 									<div className="before:-inset-2 relative flex aspect-square size-12 rounded-full border before:absolute before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">

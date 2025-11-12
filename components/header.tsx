@@ -104,7 +104,7 @@ export default function Header() {
 							<NavigationMenuItem>
 								<Button asChild variant={"outline"}>
 									<Link
-										className={`rounded hover:bg-primary/90 hover:text-white ${scrolled && "bg-primary text-white"}`}
+										className={`rounded-sm hover:bg-primary/90 hover:text-white ${scrolled && "bg-primary text-white"}`}
 										href="/contact"
 									>
 										Contact

@@ -61,7 +61,7 @@ function SheetContent({
 				{...props}
 			>
 				{children}
-				<Close className="absolute top-4 right-4 cursor-pointer rounded-xs border-none p-2 opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-ring disabled:pointer-events-none data-[state=open]:bg-secondary">
+				<Close className="absolute top-4 right-4 cursor-pointer rounded-sm border-none p-2 opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-ring disabled:pointer-events-none data-[state=open]:bg-secondary">
 					<X className="size-4" />
 					<span className="sr-only">Close</span>
 				</Close>

@@ -14,7 +14,7 @@ export default function CTASection() {
 							</p>
 						</div>
 						<div className="flex items-center max-md:w-full md:justify-end">
-							<Button className="cursor-pointer rounded-xs hover:bg-primary/90">
+							<Button className="cursor-pointer rounded-sm hover:bg-primary/90">
 								Commencer à surveiller
 							</Button>
 						</div>
