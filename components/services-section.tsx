@@ -68,7 +68,7 @@ export default function ServicesSection() {
 									>
 										<g>
 											<rect
-												className="fill-white"
+												className="fill-black"
 												height="7.7"
 												stroke="#000"
 												transform="matrix(0.9566 -0.2915 0.2915 0.9566 -9.186 5.5655)"
